@@ -3,7 +3,7 @@ A JavaScript starter for adding QR codes to EPrints
 
 This script adds QR codes to EPrints, and is designed for individual items and creator profiles.  It has come from requests to be able to include QR codes for datasets in conference posters and other physical research outputs.
 
-It uses the Google Charts QR Code Generation API: https://developers.google.com/chart/infographics/docs/qr_codes
+It uses the Google Charts QR Code Generation API: [https://developers.google.com/chart/infographics/docs/qr_codes](https://developers.google.com/chart/infographics/docs/qr_codes)
 
 Because it requires some updates to citations, you will need to make some changes in order for it to work.
 
@@ -11,8 +11,10 @@ Because it requires some updates to citations, you will need to make some change
 
 ### Citation updates
 For use on Individual items, you need to add:
-	<img src="" id="qrcode"/>
-	<br /><small id="caption"></small>
+``` html
+<img src="" id="qrcode"/>
+<br /><small id="caption"></small>
+```
 or similar to the citation.
 
 You will also need to identify which field has the DOI link with the id "doi" and the field which has the URI with the id "uri".
